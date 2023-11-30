@@ -47,6 +47,8 @@ namespace Day_1
 
             Console.WriteLine(floor);
 
+            Console.WriteLine("Wanna add this");
+
             Console.ReadKey();
         }
     }
