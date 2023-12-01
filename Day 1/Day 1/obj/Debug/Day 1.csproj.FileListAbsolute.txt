@@ -1,0 +1,8 @@
+H:\Programming\AoC 2023\Day 1\Day 1\obj\Debug\Day 1.csproj.AssemblyReference.cache
+H:\Programming\AoC 2023\Day 1\Day 1\obj\Debug\Day 1.csproj.SuggestedBindingRedirects.cache
+H:\Programming\AoC 2023\Day 1\Day 1\obj\Debug\Day 1.csproj.CoreCompileInputs.cache
+H:\Programming\AoC 2023\Day 1\Day 1\bin\Debug\Day 1.exe.config
+H:\Programming\AoC 2023\Day 1\Day 1\bin\Debug\Day 1.exe
+H:\Programming\AoC 2023\Day 1\Day 1\bin\Debug\Day 1.pdb
+H:\Programming\AoC 2023\Day 1\Day 1\obj\Debug\Day 1.exe
+H:\Programming\AoC 2023\Day 1\Day 1\obj\Debug\Day 1.pdb
