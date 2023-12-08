@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,7 @@ namespace Day_5___Part_2
         static void Main(string[] args)
         {
             List<string> values = new List<string>();
-            using (StreamReader sr = new StreamReader("test.txt"))
+            using (StreamReader sr = new StreamReader("txt.txt"))
             {
                 while (!sr.EndOfStream)
                 {
@@ -300,33 +300,18 @@ namespace Day_5___Part_2
                 for (int j = 0; j < se; j++)
                 {
 
-
-
-                    if (seed[j, 1] > next)
-                    {
-                        if (seednum[i + 1] > seed[j, 2])
-                        {
-                            long temp5 = seednum[i] - seed[j, 1] + 1;
-
-                            long temp3 = seednum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            seednum[i + 1] = temp3;
-                            seednum.Add(temp4);
-                            seednum.Add(temp5);
-                        }
-                    }
-
+                    if (seed[j, 1] > next) ;
                     else if ((seed[j, 1] + seed[j, 2]) > next)
                     {
                         if (seednum[i + 1] > seed[j, 2])
                         {
-                            long temp5 = seednum[i] - seed[j, 1] + 1;
+                            long temp5 = seed[j, 2] - (seednum[i] - seed[j, 1]);
 
                             long temp3 = seednum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            seednum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            seednum[i + 1] = temp5;
                             seednum.Add(temp4);
-                            seednum.Add(temp5);
+                            seednum.Add(temp3);
                         }
                         long ph2 = next - seed[j, 1];
                         next = seed[j, 0] + ph2;
@@ -345,30 +330,18 @@ namespace Day_5___Part_2
                 {
 
 
-                    if (soil[j, 1] > next)
-                    {
-                        if (soilnum[i + 1] > soil[j, 2])
-                        {
-                            long temp5 = soilnum[i] - soil[j, 1] + 1;
-
-                            long temp3 = soilnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            soilnum[i + 1] = temp3;
-                            soilnum.Add(temp4);
-                            soilnum.Add(temp5);
-                        }
-                    }
+                    if (soil[j, 1] > next) ;
                     else if ((soil[j, 1] + soil[j, 2]) > next)
                     {
                         if (soilnum[i + 1] > soil[j, 2])
                         {
-                            long temp5 = soilnum[i] - soil[j, 1] + 1;
+                            long temp5 = soil[j, 2] - (soilnum[i] - soil[j, 1]);
 
                             long temp3 = soilnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            soilnum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            soilnum[i + 1] = temp5;
                             soilnum.Add(temp4);
-                            soilnum.Add(temp5);
+                            soilnum.Add(temp3);
                         }
                         long ph2 = next - soil[j, 1];
                         next = soil[j, 0] + ph2;
@@ -386,30 +359,18 @@ namespace Day_5___Part_2
                 for (int j = 0; j < f; j++)
                 {
 
-                    if (fert[j, 1] > next)
-                    {
-                        if (fertnum[i + 1] > fert[j, 2])
-                        {
-                            long temp5 = fertnum[i] - fert[j, 1] + 1;
-
-                            long temp3 = fertnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            fertnum[i + 1] = temp3;
-                            fertnum.Add(temp4);
-                            fertnum.Add(temp5);
-                        }
-                    }
+                    if (fert[j, 1] > next) ;
                     else if ((fert[j, 1] + fert[j, 2]) > next)
                     {
                         if (fertnum[i + 1] > fert[j, 2])
                         {
-                            long temp5 = fertnum[i] - fert[j, 1] + 1;
+                            long temp5 = fert[j, 2] - (fertnum[i] - fert[j, 1]);
 
                             long temp3 = fertnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            fertnum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            fertnum[i + 1] = temp5;
                             fertnum.Add(temp4);
-                            fertnum.Add(temp5);
+                            fertnum.Add(temp3);
                         }
 
                         long ph2 = next - fert[j, 1];
@@ -429,30 +390,18 @@ namespace Day_5___Part_2
                 {
 
 
-                    if (water[j, 1] > next)
-                    {
-                        if (waternum[i + 1] > water[j, 2])
-                        {
-                            long temp5 = waternum[i] - water[j, 1] + 1;
-
-                            long temp3 = waternum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            waternum[i + 1] = temp3;
-                            waternum.Add(temp4);
-                            waternum.Add(temp5);
-                        }
-                    }
+                    if (water[j, 1] > next) ;
                     else if ((water[j, 1] + water[j, 2]) > next)
                     {
                         if (waternum[i + 1] > water[j, 2])
                         {
-                            long temp5 = waternum[i] - water[j, 1] + 1;
+                            long temp5 = water[j, 2] - (waternum[i] - water[j, 1]);
 
                             long temp3 = waternum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            waternum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            waternum[i + 1] = temp5;
                             waternum.Add(temp4);
-                            waternum.Add(temp5);
+                            waternum.Add(temp3);
                         }
                         long ph2 = next - water[j, 1];
                         next = water[j, 0] + ph2;
@@ -471,32 +420,19 @@ namespace Day_5___Part_2
                 {
 
 
-                    if (light[j, 1] > next)
-                    {
-                        if (lightnum[i + 1] > light[j, 2])
-                        {
-                            long temp5 = lightnum[i] - light[j, 1] + 1;
-
-                            long temp3 = lightnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            lightnum[i + 1] = temp3;
-
-                            lightnum.Add(temp4);
-                            lightnum.Add(temp5);
-                        }
-                    }
+                    if (light[j, 1] > next) ;
                     else if ((light[j, 1] + light[j, 2]) > next)
                     {
                         if (lightnum[i + 1] > light[j, 2])
                         {
-                            long temp5 = lightnum[i] - light[j, 1] + 1;
+                            long temp5 = light[j, 2] - (lightnum[i] - light[j, 1]);
 
                             long temp3 = lightnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            lightnum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            lightnum[i + 1] = temp5;
 
                             lightnum.Add(temp4);
-                            lightnum.Add(temp5);
+                            lightnum.Add(temp3);
                         }
                         long ph2 = next - light[j, 1];
                         next = light[j, 0] + ph2;
@@ -514,30 +450,19 @@ namespace Day_5___Part_2
                 for (int j = 0; j < t; j++)
                 {
 
-                    if (temp[j, 1] > next)
-                    {
-                        if (tempnum[i + 1] > temp[j, 2])
-                        {
-                            long temp5 = tempnum[i] - temp[j, 1] + 1;
+                    if (temp[j, 1] > next) ;
 
-                            long temp3 = tempnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            tempnum[i + 1] = temp3;
-                            tempnum.Add(temp4);
-                            tempnum.Add(temp5);
-                        }
-                    }
                     else if ((temp[j, 1] + temp[j, 2]) > next)
                     {
                         if (tempnum[i + 1] > temp[j, 2])
                         {
-                            long temp5 = tempnum[i] - temp[j, 1] + 1;
+                            long temp5 = temp[j, 2] - (tempnum[i] - temp[j, 1]);
 
                             long temp3 = tempnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            tempnum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            tempnum[i + 1] = temp5;
                             tempnum.Add(temp4);
-                            tempnum.Add(temp5);
+                            tempnum.Add(temp3);
                         }
                         long ph2 = next - temp[j, 1];
                         next = temp[j, 0] + ph2;
@@ -556,30 +481,19 @@ namespace Day_5___Part_2
                 {
 
 
-                    if (humid[j, 1] > next)
-                    {
-                        if (humidnum[i + 1] > humid[j, 2])
-                        {
-                            long temp5 = humidnum[i] - humid[j, 1] + 1;
+                    if (humid[j, 1] > next) ;
 
-                            long temp3 = humidnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            humidnum[i + 1] = temp3;
-                            humidnum.Add(temp4);
-                            humidnum.Add(temp5);
-                        }
-                    }
                     else if ((humid[j, 1] + humid[j, 2]) > next)
                     {
                         if (humidnum[i + 1] > humid[j, 2])
                         {
-                            long temp5 = humidnum[i] - humid[j, 1] + 1;
+                            long temp5 = humid[j, 2] - (humidnum[i] - humid[j, 1]);
 
                             long temp3 = humidnum[i + 1] - temp5;
-                            long temp4 = next + temp3;
-                            humidnum[i + 1] = temp3;
+                            long temp4 = next + temp5;
+                            humidnum[i + 1] = temp5;
                             humidnum.Add(temp4);
-                            humidnum.Add(temp5);
+                            humidnum.Add(temp3);
                         }
                         long ph2 = next - humid[j, 1];
                         next = humid[j, 0] + ph2;
@@ -654,9 +568,3 @@ namespace Day_5___Part_2
     }
 }
 //seed, soil, fert, water, light, temp, humid
-
-
-// <60944003
-
-
-
