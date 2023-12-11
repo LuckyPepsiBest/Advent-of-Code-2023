@@ -1,7 +1,0 @@
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\bin\Debug\Day 5 - Part 1.exe.config
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\bin\Debug\Day 5 - Part 1.exe
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\bin\Debug\Day 5 - Part 1.pdb
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\obj\Debug\Day 5 - Part 1.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\obj\Debug\Day 5 - Part 1.csproj.CoreCompileInputs.cache
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\obj\Debug\Day 5 - Part 1.exe
-C:\Users\User\OneDrive\Documents\GitHub\Advent-of-Code-2023\Day 5\Day 5 - Part 1\Day 5 - Part 1\obj\Debug\Day 5 - Part 1.pdb
